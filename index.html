@@ -5,11 +5,81 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="fonts/css/fontello.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<title>Document</title>
 </head>
 
 <body>
-	<p>Hello in the github pages application!</p>
+	<div class="menu">
+		<div class="menu__title">kalambury</div>
+		<div class="menu__button  menu__button-fastGame">
+			<div class="menu__button__title">Szybka gra</div>
+			<div class="start__button__tip">
+				Od razu wylosuj hasła do zgadnięcia, z domyślnymi ustawieniami
+			</div>
+		</div>
+		<div class="menu__button  menu__button-newGame">
+			<div class="menu__button__title">Nowa gra</div>
+			<div class="start__button__tip">
+				Zacznij nową grę, nazwij drużyny i graczy, wyznacz kategorie, długość tury i czas na zgadnięcie.
+			</div>
+		</div>
+		<i class="icon-cog"></i>
+	</div>
+	<div class="settings">
+		<div class="settings__bar">
+			<i class="icon-left"></i>
+		</div>
+		<div class="setting__fastGame">
+			<div class="settings__title">Ustawienia szybkiej gry</div>
+			<div class="settings__fastGame__timeSetting">
+				<div class="settings__name">Czas </div>
+				<select name="fastGame-time" class="settings__fastGame__timeSetting__">
+					<option value="0:30">0:30</option>
+					<option value="0:30">1:00</option>
+					<option value="0:30">1:30</option>
+					<option value="0:30">2:00</option>
+					<option value="0:30">2:30</option>
+					<option value="null"> - </option>
+
+				</select>
+			</div>
+			<div class="settings__fastGame__categories categories">
+				<div class='category'>...kateorie</div>
+			</div>
+			<div class="settings__fastGame__dictionaries">
+				<div class="settings__name">
+					Z jakiej puli haseł chcesz skorzystać?
+				</div>
+				<div class="checkbox">
+					<input type='checkbox' class='check' value='main-dictonary' id='main-dictonary-check'>
+					<label for='main-dictonary-check'>Główna baza haseł</label>
+				</div>
+				<div class="checkbox">
+					<input type='checkbox' class='check' alue='my-dictonary' id='my-dictonary-check'>
+					<label for='my-dictonary-check'>Moja baza haseł</label>
+				</div>
+
+			</div>
+			<div class="settings__fastGame__acceptButton">Zapisz</div>
+		</div>
+		<div class="settings__myDictionary">
+			<div class="settings__title">Moja baza haseł</div>
+			<div class="settings__myDictionary__addWords">
+				<i class="fas fa-plus add-words-icon"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="fast-game-start-button">
+		<div class="start-fast-game-button"></div>
+	</div>
+	<div class="fast-game">
+
+	</div>
 
 	<script src="dist/main.js"></script>
 </body>

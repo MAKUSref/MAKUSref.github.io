@@ -1,4 +1,5 @@
 import 'normalize.css/normalize.css';
 import "./scss/style.scss";
+import init from './js/start';
 
-document.write('hello from js');
+init();

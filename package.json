@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "live-server dist/",
-    "build": "webpack --config webpack.config.js",
+    "serve": "live-server",
+    "build": "webpack --config webpack.config.js --watch",
     "start": "webpack-dev-server"
   },
   "repository": {
