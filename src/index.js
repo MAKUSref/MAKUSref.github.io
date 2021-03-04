@@ -1,6 +1,6 @@
 import 'normalize.css/normalize.css';
 import "./scss/style.scss";
-import init from './js/start';
+import setupPage from './js/start';
 
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', () => {
@@ -12,4 +12,4 @@ if ('serviceWorker' in navigator) {
 	});
 }
 
-init();
+setupPage();
