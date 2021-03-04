@@ -10,9 +10,32 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<title>Document</title>
+
+	<style>
+		.loader {
+			background-color: white;
+			position: fixed;
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
+		}
+
+		.loader p {
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body>
+	<!-- Loader -->
+	<div class="loader">
+		<p>loading...</p>
+	</div>
+	<!-- Loader -->
+
 	<div class="menu">
 		<div class="menu__title">kalambury</div>
 		<div class="menu__button  menu__button-fastGame">
@@ -81,6 +104,21 @@
 
 	</div>
 
+	<script>
+		window.addEventListener('load', () => {
+			document.querySelector('.loader').style.display = 'none';
+		});
+
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('dist/service-worker.js').then(registration => {
+					console.log('SW registered: ', registration);
+				}).catch(registrationError => {
+					console.log('SW registration failed: ', registrationError);
+				});
+			});
+		}
+	</script>
 	<script src="dist/main.js"></script>
 </body>
 

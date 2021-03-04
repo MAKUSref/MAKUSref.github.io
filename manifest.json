@@ -1,0 +1,15 @@
+{
+    "short_name": "Kalambury",
+    "name": "Kalambury",
+    "icons": [
+        {
+            "src":"/assets/icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "display": "standalone"
+  }
