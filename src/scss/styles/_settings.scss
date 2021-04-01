@@ -1,11 +1,15 @@
 .settings{
     display: none;
+    opacity: 1;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    animation-duration: 0.75s;
 }
 
-.settings__bar{
+
+
+.bar{
     display: flex;
     width: 100%;
 }
@@ -17,10 +21,11 @@
 
 .settings__title{
     width: 100%;
-    padding: 5px;
+    padding: 5px 0;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom-style: dotted;
+    border-bottom-style: solid;
+    border-color: rgb(190, 190, 190);
     border-width: 1px;
     margin: 15px 0px;
     font-size: 15px;
@@ -39,6 +44,13 @@
     align-items: center;
 }
 
+.warning{
+    color: rgb(197, 27, 27);
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: none;
+}
+
 
 
 .settings__fastGame__timeSetting__{
@@ -50,9 +62,9 @@
 }
 
 .category{
-    margin:5px;
+    margin:10px;
     width: 250px;
-    padding: 10px;
+    padding: 25px 0px;
     background-color: rgb(240, 240, 240);
     border-radius: 15px;
     text-transform: uppercase;
@@ -65,39 +77,4 @@
     align-items: center;
     flex-direction: column;
     margin: 10px 0px ;
-}
-
-.checkbox{
-    display: flex;
-    flex-direction: row;
-    left: auto;
-    margin-top: 10px;
-    text-transform: uppercase;
-}
-
-.settings__fastGame__dictionaries{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.settings__fastGame__acceptButton{
-    margin-top: 15px;
-    border-radius: 25px;
-    box-shadow: 0 15px 30px 0 rgba(0,0,0,.05);
-    background-color: rgb(218, 165, 207);
-    padding: 7px;
-    color: rgb(36, 36, 36);
-    width: 100px;
-    letter-spacing: 2px;
-}
-
-.add-words-icon{
-    margin-top: 8px;
-    border-radius: 25px;
-    box-shadow: 0 15px 30px 0 rgba(0,0,0,.05);
-    background-color: rgb(218, 165, 207);
-    padding: 7px;
-    color: white;
 }

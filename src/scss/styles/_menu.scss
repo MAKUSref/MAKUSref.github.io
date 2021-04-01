@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-duration: 0.75s;
 }
 
 .menu__title{
@@ -54,3 +55,7 @@ body{
     
 }
 
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

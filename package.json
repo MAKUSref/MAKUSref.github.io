@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/MAKUSref/MAKUSref.github.io#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^5.2.0",
     "live-server": "^1.2.1",
