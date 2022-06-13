@@ -96,7 +96,10 @@ html, body {
 }
 
 .cti-room-info {
-  transform: translate(0, -200px);
+  /* transform: translate(0, -200px); */
+  width: 100%;
+  position: absolute;
+  top: 10%;
   text-align: center;
   font-size: 20px;
 }
