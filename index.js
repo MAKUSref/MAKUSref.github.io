@@ -156,6 +156,7 @@ class Dashboard {
     this._addCTILocationEvent();
     this._addEnterCTIEvent();
     this._addExitCTIEvent();
+    this._addPositionWatcher();
   }
 
   getCurrentUserPosition(position) {
@@ -238,16 +239,14 @@ class Dashboard {
     
     document.querySelector(CTI_ENTER_BTN_SELECTOR).addEventListener('click', () => {
       navigator.geolocation.getCurrentPosition((pos) => {
-        // const { lat, long, accuracy } = this.getCurrentUserPosition(pos);
-        const lat = 51.747000;
-        const long = 19.455700;
+        const { lat, long, accuracy } = this.getCurrentUserPosition(pos);
+        // const lat = 51.747000;
+        // const long = 19.455700;
         
         this._currX = lat;
         this._currY = long;
 
         const inCTI = this._checkInCTI(this._currX, this._currY);
-
-        document.querySelector(".log").textContent = inCTI;
 
         if (inCTI) {
           this._showCTIMap();
@@ -355,6 +354,20 @@ class Dashboard {
     });
 
     return room;
+  }
+
+  _addPositionWatcher() {
+    setInterval(() => {
+      navigator.geolocation.getCurrentPosition((pos) => {
+        const { lat, long } = this.getCurrentUserPosition(pos);
+        this._currX = lat;
+        this._currY = long;
+        this._correctUserMarker();
+        console.log("updated: " + lat);
+      });
+
+
+    }, 1000);
   }
 }
 
