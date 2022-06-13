@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realtime location tracker</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
+  <!-- leaflet css  -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="map"></div>
+  
+  <div class="map-ui">
+    <button id="focus-map" type="button" class="btn btn-map-ui btn-light btn-floating get-focus-btn">
+      <i class="fas fa-crosshairs fa-2x"></i>
+    </button>
+
+    <button class="cti-btn btn-map-ui btn btn-light btn-floating">CTI</button>
+
+    <button type="button" class="btn btn-success btn-map-ui go-to-cti btn-rounded" data-mdb-ripple-color="dark">
+      Enter to CTI
+      <p class="log" style="color:black;">logg</p>
+    </button>
+
+    <div class="cti-map-container ">
+      <img src="CTI.png" class="cti-map" alt="cti">
+      <div class="cti-pointer-layer">
+        <div class="user-marker"></div>
+      </div>
+      <button class="cti-btn btn btn-light btn-floating cti-map-exit">
+        <i class="fa-solid fa-arrow-left-long fa-2xl"></i>
+      </button>
+      <p class="cti-room-info">
+        You are in <span class="room-name">NO_ROOM</span> right now!
+      </p>
+    </div>
+  </div>
+
+
+
+</body>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
+<!-- leaflet js  -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="index.js" type="module"></script>
+
+</html>
