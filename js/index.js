@@ -13,7 +13,12 @@ const navSearchBtnEl = document.getElementById('nav-search-btn');
   slider.mount();
   scaleImages();
   humburger();
-  (new WOW()).init();
+  
+  ScrollReveal().reveal('.reveal', {
+    delay: 120,
+    distance: '30px',
+    duration: 700
+  });
 
   openGalleryBtnEl?.addEventListener('click', handleOpenGallery);
   navSearchBtnEl?.addEventListener('click', toggleSearch);

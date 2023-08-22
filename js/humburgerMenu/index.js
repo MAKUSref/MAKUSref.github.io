@@ -14,7 +14,6 @@ function init() {
 }
 
 function closeHumburger() {
-  console.log('close');
   humburgerContainerEl.classList.remove(HUMBURGER_OPEN_CLASS_NAME);
 
   setTimeout(() => {
@@ -23,7 +22,6 @@ function closeHumburger() {
 }
 
 function openHumburger() {
-  console.log('open');
   humburgerContainerEl.style.display = 'block';
 
   setTimeout(() => {

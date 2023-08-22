@@ -20,7 +20,6 @@
     integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Tailwind css -->
   <link rel="stylesheet" href="/dist/style.css">
 
@@ -28,7 +27,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script defer src="https://unpkg.com/scrollreveal"></script>
 
   <!-- Custom js -->
   <script defer src="./js/index.js" type="module"></script>
@@ -60,7 +59,7 @@
                       <img class="inline w-6 mr-3" src="/assets/icon-pencil.svg" alt="icon pencil">
                       Projekty
                     </h5>
-                    <p class="my-4">
+                    <p class="my-6">
                       Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej
                       przestrzeni.
                     </p>
@@ -78,11 +77,11 @@
                       <img class="inline w-6 mr-3" src="/assets/icon-eye.svg" alt="icon pencil">
                       Wizualizacje
                     </h5>
-                    <p class="my-4">
+                    <p class="my-6">
                       Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.
                     </p>
                     <div>
-                      <a href="" class="bonav-itemrder-b text-primary border-primary pb-1">
+                      <a href="" class="border-b text-primary border-primary pb-1">
                         <span class="mr-2">Dowiedz się więcej</span>
                         <img src="/assets/icons/arrow-right.svg" alt="" class="inline">
                       </a>
@@ -95,7 +94,7 @@
                       <img class="inline w-6 mr-3" src="/assets/icon-stars.svg" alt="icon pencil">
                       Realizacje
                     </h5>
-                    <p class="my-4">
+                    <p class="my-6">
                       Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.
                     </p>
                     <div>
@@ -188,7 +187,7 @@
 
                 <div class="flex flex-col lg:grid lg:items-start">
                   <div
-                    class="w-full z-10 lg:w-1/2 lg:relative lg:self-center lg:pr-8 lg:col-start-1 lg:col-end-1 lg:row-start-2 lg:row-end-2">
+                    class="reveal w-full z-10 lg:w-1/2 lg:relative lg:self-center lg:pr-8 lg:col-start-1 lg:col-end-1 lg:row-start-2 lg:row-end-2">
                     <h1 class="py-9">Nowoczesna <br />aranżacja <br /> Twojego ogrodu</h1>
                     <p class="py-2 max-w-[450px]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
                       realizacji.
@@ -293,14 +292,13 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </ul>
         </div>
       </div>
 
-      <div class="absolute bottom-0 right-0 bg-[#F5F0EC] p-1 sm:px-4 md:px-8 sm:py-3 md:py-6 flex justify-between gap-1 sm:gap-4 md:gap-8" data-glide-el="controls">
+      <div class="absolute bottom-0 right-0 bg-secondary-light p-1 sm:px-4 md:px-8 sm:py-3 md:py-6 flex justify-between gap-1 sm:gap-4 md:gap-8" data-glide-el="controls">
         <div class="cursor-pointer" data-glide-dir="<">
           <img src="/assets/icons/arrow-left-48x48.svg" alt="arrow left">
         </div>
@@ -311,10 +309,10 @@
     </div>
   </header>
   <main>
-    <section id="section-offers" class="bg-[#F5F0EC] pt-[120px] pb-[160px]">
+    <section id="section-offers" class="bg-secondary-light pt-[120px] pb-[160px]">
       <div class="container mx-auto px-3">
         <div class="max-w-[1040px] mx-auto">
-          <div class="mb-24 max-w-3xl wow bounceInUp" data-wow-duration="2s" data-wow-delay="1s">
+          <div class="mb-24 max-w-3xl reveal" data-wow-duration="2s" data-wow-delay="1s">
             <p class="text-primary text-xs">Oferta</p>
             <h2 class="pt-4 pb-8">Działamy <em>kompleksowo</em></h2>
             <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz
@@ -380,7 +378,7 @@
         </div>
       </div>
     </section>
-    <section id="section-about-company" class="bg-primary text-[#F5F0EC] overflow-hidden">
+    <section id="section-about-company" class="bg-primary text-secondary-light overflow-hidden">
       <div class="container mx-auto px-3">
         <div class="lg:grid items-start">
           <div class="lg:w-1/2 relative lg:pr-8 col-start-1 col-end-1 row-start-2 row-end-2">
@@ -389,7 +387,7 @@
             </div>
           </div>
           <div
-            class="py-8 lg:py-0 lg:w-1/2 relative self-center ml-auto lg:pl-32 col-start-1 col-end-1 row-start-2 row-end-2">
+            class="reveal py-8 lg:py-0 lg:w-1/2 relative self-center ml-auto lg:pl-32 col-start-1 col-end-1 row-start-2 row-end-2">
             <p class="text-xs">O firmie</p>
             <h2 class="my-4">Tworzymy <br />z <em>pasją</em></h2>
             <p class="my-6">
@@ -398,7 +396,7 @@
               przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody
               małoobsługowe, dostosowane do współczesnego trybu życia.
             </p>
-            <button class="flex items-center gap-2 bg-transparent border-[#F5F0EC] border px-[22px] pb-3.5 pt-3 mt-12 rounded-3xl box-border">
+            <button class="flex items-center gap-2 bg-transparent border-secondary-light border px-[22px] pb-3.5 pt-3 mt-12 rounded-3xl box-border">
               <span>Poznaj nas bliżej</span>
               <img src="/assets/icons/arrow-right-white.svg" alt="">
             </button>
@@ -407,7 +405,7 @@
       </div>
     </section>
     <section id="section-portfolio" class="bg-secondary">
-      <div class="max-w-[1120px] mx-auto pt-[120px] pb-24">
+      <div class="reveal max-w-[1120px] mx-auto pt-[120px] pb-24">
         <p class="text-primary text-xs">Realizacje</p>
         <h2 class="pt-4">Nasze <em>projekty</em></h2>
       </div>
@@ -503,17 +501,17 @@
         </div>
       </div>
     </section>
-    <section id="section-contact" class="bg-[#F5F0EC]">
+    <section id="section-contact" class="bg-secondary-light">
       <div class="container mx-auto px-3">
         <div class="py-[60px]">
-          <div class="bg-primary mx-auto max-w-[1040px] text-[#F5F0EC] py-16 md:py-[120px] px-12 md:px-[110px]">
-            <div class="flex md:items-end gap-16 flex-col md:flex-row">
+          <div class="bg-primary mx-auto max-w-[1040px] text-secondary-light py-16 md:py-[120px] px-12 md:px-[110px]">
+            <div class="reveal flex md:items-end gap-16 flex-col md:flex-row">
               <h3 class="text-[40px]">
                 Zostańmy w kontakcie! Znajdziesz nas na <em><strong>Instagramie</strong></em>.
               </h3>
               <div class="flex md:block justify-between items-center">
                 <p class="md:whitespace-nowrap">Śledź nasze <br /> najnowsze realizacje!</p>
-                <button class="bg-[#F5F0EC] text-primary px-6 pb-3.5 pt-3 rounded-3xl md:mt-6">Instagram</button>
+                <button class="bg-secondary-light text-primary px-6 pb-3.5 pt-3 rounded-3xl md:mt-6">Instagram</button>
               </div>
             </div>
           </div>
@@ -521,7 +519,7 @@
       </div>
     </section>
   </main>
-  <footer class="bg-[#111111] text-[#F5F0EC] py-5">
+  <footer class="bg-[#111111] text-secondary-light py-5">
     <div class="container mx-auto px-3">
       <div class="max-w-[1040px] mx-auto">
         <div class="py-[60px]">

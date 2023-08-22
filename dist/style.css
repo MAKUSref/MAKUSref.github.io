@@ -436,6 +436,8 @@ video {
 
 html {
   scroll-behavior: smooth;
+  --tw-text-opacity: 1;
+  color: rgb(17 17 17 / var(--tw-text-opacity));
 }
 
 * {
@@ -450,6 +452,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3rem;
   line-height: 1;
+  font-size: 42px;
 }
 
 @media (min-width: 640px) {
@@ -923,6 +926,10 @@ p {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -941,14 +948,6 @@ p {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-0 {
-  gap: 0px;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .gap-x-16 {
@@ -980,19 +979,19 @@ p {
   border-bottom-width: 1px;
 }
 
-.border-\[\#F5F0EC\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(245 240 236 / var(--tw-border-opacity));
-}
-
 .border-black {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(17 17 17 / var(--tw-border-opacity));
 }
 
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(27 91 49 / var(--tw-border-opacity));
+}
+
+.border-secondary-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 240 236 / var(--tw-border-opacity));
 }
 
 .bg-\[\#111111\] {
@@ -1004,11 +1003,6 @@ p {
   background-color: #12121265;
 }
 
-.bg-\[\#F5F0EC\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 240 236 / var(--tw-bg-opacity));
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(27 91 49 / var(--tw-bg-opacity));
@@ -1017,6 +1011,11 @@ p {
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(220 193 171 / var(--tw-bg-opacity));
+}
+
+.bg-secondary-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 240 236 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -1044,10 +1043,6 @@ p {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-12 {
@@ -1120,11 +1115,6 @@ p {
   padding-bottom: 60px;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1191,14 +1181,14 @@ p {
   line-height: 1rem;
 }
 
-.text-\[\#F5F0EC\] {
-  --tw-text-opacity: 1;
-  color: rgb(245 240 236 / var(--tw-text-opacity));
-}
-
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(27 91 49 / var(--tw-text-opacity));
+}
+
+.text-secondary-light {
+  --tw-text-opacity: 1;
+  color: rgb(245 240 236 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1314,9 +1304,19 @@ p {
     white-space: nowrap;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:px-\[110px\] {
     padding-left: 110px;
     padding-right: 110px;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:py-\[120px\] {
@@ -1327,16 +1327,6 @@ p {
   .md\:py-\[60px\] {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 }
 
