@@ -1,15 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo-s.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SipPal Discovery</title>
-    <script type="module" crossorigin src="/assets/index-e0df6ef9.js"></script>
-    <link rel="stylesheet" href="/assets/index-9e99aa47.css">
-  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/logo-sm.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>AI Meet</title>
+</head>
+
+<body>
+
+  <nav class="bg-neutral-2 fixed w-full">
+    <div class="container flex justify-between">
+      <div class="py-3">
+        <a href="#home">
+          <img src="./assets/logo-type-sm.png" alt="">
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a class="nav-item" href="#topics">
+          Topics
+        </a>
+        <a class="nav-item" href="#info">
+          Info
+        </a>
+        <a class="nav-item" href="#newsletter">
+          Newsletter
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intro -->
+  <section id="home" class="h-screen">
+    <div class="container h-full flex flex-col justify-center">
+      <h6 class="pt-12 md:pt-0">We are honored to invite you to</h6>
+      <h2 class="font-semibold my-4">Artificial Intelligence Event <br />By Sknmm IT</h2>
+      <div class="pt-6">
+        <p class="my-1 py-1 pl-5 border-l-4 border-primary-4">AI in embedded systems</p>
+        <p class="my-1 py-1 pl-5 border-l-4 border-primary-4">Convolutional networks</p>
+        <p class="my-1 py-1 pl-5 border-l-4 border-primary-4">Machine Learning</p>
+      </div>
+      <div class="pt-12 flex gap-10">
+        <div class="w-20">
+          <img src="./assets/solar.png" alt="politechnika">
+        </div>
+        <div class="w-20">
+          <img src="./assets/iron.png" alt="politechnika">
+        </div>
+        <div class="w-20">
+          <img src="./assets/pl.png" alt="politechnika">
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-10 right-0 -z-10">
+      <img src="./assets/intro1.png" />
+    </div>
+  </section>
+
+  <!-- Topics -->
+  <section id="topics" class="mb-48">
+    <div class="container">
+      <h2 class="py-16">Topics</h2>
+      <div class="row my-16 text-center">
+        <div class="sm:col-12 md:col-4 px-3">
+          <div>
+            <img class="inline-block" src="./assets/1.svg" alt="">
+          </div>
+          <p class="my-8">1. The use of artificial intelligence in embedded systems</p>
+        </div>
+        <div class="sm:col-12 md:col-4 px-3">
+          <div>
+            <img class="inline-block" src="./assets/2.svg" alt="">
+          </div>
+          <p class="my-8">2. Introduction to convolutional networks</p>
+        </div>
+        <div class="sm:col-12 md:col-4 px-3">
+          <div>
+            <img class="inline-block" src="./assets/3.svg" alt="">
+          </div>
+          <p class="my-8">
+            3. Using a machine learning approach in event log analysis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Info -->
+  <section id="info">
+    <div class="container">
+      <h2 class="pt-16">Event info</h2>
+      <div class="my-8 row">
+        <div class="sm:col-12 lg:col-6 px-2">
+          <p class="mb-2"><i class="fa-regular fa-calendar-days mr-4"></i>27.11.2023 <i
+              class="fa-regular fa-clock mx-4"></i>18.00 - 20.00</p>
+          <p class="mb-2"><i class="fa-solid fa-location-dot mr-4"></i>Politechnika Łódzka, campus B</p>
+          <p class="mb-2"><i class="fa-regular fa-building mr-4"></i>Building B-19</p>
+          <p class="mb-2"><i class="fa-solid fa-door-closed mr-4"></i>First floor, Cinema Room</p>
+        </div>
+        <div class="sm:col-12 lg:col-6 px-2">
+          <iframe class="w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440.7446760302607!2d19.455657913561602!3d51.74696393926211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34dc5f6dc679%3A0xd312c21c670931be!2sCentrum%20Technologii%20Informatycznych!5e0!3m2!1spl!2spl!4v1700441642691!5m2!1spl!2spl"
+            width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign up -->
+  <section id="newsletter" class="mb-24">
+    <div class="container">
+      <h2 class="py-16">Sign up for Newsletter</h2>
+      <div class="max-w-[600px] mx-auto">
+        <p class="text-center mb-8">Just type your full name and e-mail. Then click Sign Up.</p>
+        <form action="">
+          <div class="row">
+            <div class="col-6 px-2">
+              <input class="input-text w-full" type="text" placeholder="Full name" />
+            </div>
+            <div class="col-6 px-2">
+              <input class="input-text w-full" type="text" placeholder="E-mail" />
+            </div>
+          </div>
+          <div class="flex justify-center my-10">
+            <button class="bg-primary-4 px-10 py-2 font-semibold">
+              Sign Up!
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-0">
+    <div class="container">
+      <p class="text-center text-sm py-6">@SKNMM IT Group</p>
+    </div>
+  </footer>
+
+  <script src="bundle.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,17 @@
+<svg width="177" height="177" viewBox="0 0 177 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="88.5" cy="88.5" r="88.5" fill="#144976"/>
+<rect x="61.4751" y="47.0646" width="83.2625" height="3.96566" transform="rotate(30 61.4751 47.0646)" fill="white"/>
+<rect x="60.4922" y="126.696" width="83.2625" height="3.96566" transform="rotate(-30 60.4922 126.696)" fill="white"/>
+<rect x="60" y="130.262" width="83.2625" height="3.96566" transform="rotate(-90 60 130.262)" fill="white"/>
+<rect x="60" y="125.172" width="68.0071" height="3.96566" transform="rotate(-57.2118 60 125.172)" fill="white"/>
+<rect x="67.3519" y="57" width="61.6393" height="3.96566" transform="rotate(57.6982 67.3519 57)" fill="white"/>
+<rect x="59" y="89.5564" width="43.8955" height="3.96566" transform="rotate(-30.9216 59 89.5564)" fill="white"/>
+<rect x="62.0715" y="87" width="43.8955" height="3.96566" transform="rotate(31.4904 62.0715 87)" fill="white"/>
+<rect x="96" y="106" width="39" height="4" transform="rotate(-90 96 106)" fill="white"/>
+<circle cx="61.5" cy="50.5" r="12.5" fill="#FDD900"/>
+<path d="M74 88.5C74 95.4036 68.4036 101 61.5 101C54.5964 101 49 95.4036 49 88.5C49 81.5964 54.5964 76 61.5 76C68.4036 76 74 81.5964 74 88.5Z" fill="#FDD900"/>
+<circle cx="61.5" cy="126.5" r="12.5" fill="#FDD900"/>
+<circle cx="97.5" cy="107.5" r="12.5" fill="#E64E3C"/>
+<path d="M110 69.5C110 76.4036 104.404 82 97.5 82C90.5964 82 85 76.4036 85 69.5C85 62.5964 90.5964 57 97.5 57C104.404 57 110 62.5964 110 69.5Z" fill="#E64E3C"/>
+<circle cx="133.5" cy="88.5" r="12.5" fill="#5DC1DA"/>
+</svg>
